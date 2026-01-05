@@ -142,3 +142,8 @@ Turn Concurrency Control OFF
 Get Items
 Top Count = 1
 Indexed column used
+concat(
+  'Business_x0020_Key eq ''',
+  items('Apply_to_each')?['Business_Key'],
+  ''''
+)
