@@ -147,3 +147,4 @@ concat(
   items('Apply_to_each')?['Business_Key'],
   ''''
 )
+_api/web/lists/GetByTitle('Contractor Holiday Requests')/items(@{outputs('Compose')})/breakroleinheritance(copyRoleAssignments=false,clearSubscopes=true)
