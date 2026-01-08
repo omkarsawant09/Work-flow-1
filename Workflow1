@@ -1,3 +1,11 @@
+@and(
+  not(equals(triggerBody()?['Editor']?['Email'], 'Omkar.sawant@firstcitizens.com')),
+  not(equals(triggerBody()?['Editor']?['Email'], 'flowservice@firstcitizens.com'))
+)
+
+
+
+
 json(concat(
   '{ "principalid": ',
   item()?['Id'],
