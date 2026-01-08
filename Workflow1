@@ -1,3 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "d": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Member": {
+                "type": "object",
+                "properties": {
+                  "Email": {
+                    "type": "string"
+                  }
+                }
+              },
+              "RoleDefinitionBindings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Name": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 _api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/roleassignments?$expand=Member,RoleDefinitionBindings
 
 
