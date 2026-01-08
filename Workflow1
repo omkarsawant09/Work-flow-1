@@ -1,4 +1,11 @@
 {
+  "principalid": @{items('Apply_to_each')?['Id']},
+  "roledefid": 1073741826
+}
+
+
+
+{
   "Accept": "application/json;odata=verbose",
   "Content-Type": "application/json;odata=verbose"
 }
