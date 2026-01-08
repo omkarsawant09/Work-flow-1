@@ -1,3 +1,15 @@
+{
+  "Accept": "application/json;odata=verbose",
+  "Content-Type": "application/json;odata=verbose"
+}
+
+
+
+{
+  "principalid": @{items('Apply_to_each')?['Claims']},
+  "roledefid": 1073741826
+}
+
 _api/web/lists/GetByTitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/breakroleinheritance(copyRoleAssignments=false, clearSubscopes=true)_api/web/lists/GetByTitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/breakroleinheritance(false,true)_api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerOutputs()?['body/ID']})/breakroleinheritance(false,true)length(body('Get_items')?['value']) > 0🔄 FLOW 1 — Excel → SharePoint Sync (DETAILED)
 🎯 Purpose of Flow 1
 Read Excel as source of truth
