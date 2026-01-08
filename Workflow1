@@ -1,3 +1,20 @@
+{
+  "results": [
+    {
+      "PrincipalId": 11,
+      "Member": {
+        "Email": "omkar.sawant@firstcitizens.com",
+        "UserPrincipalName": "omkar.sawant@firstcitizens.com"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
 _api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/roleassignments/removebyprincipalid(@{items('Apply_to_each')?['PrincipalId']})
 
 
