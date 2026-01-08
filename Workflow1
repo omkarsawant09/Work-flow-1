@@ -1,3 +1,10 @@
+json(concat(
+  '{ "principalid": ',
+  item()?['Id'],
+  ', "roledefid": 1073741826 }'
+))
+
+
 {
   "principalid": @{items('Apply_to_each')?['Id']},
   "roledefid": 1073741826
