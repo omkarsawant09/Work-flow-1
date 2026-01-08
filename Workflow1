@@ -148,3 +148,4 @@ concat(
   ''''
 )
 _api/web/lists/GetByTitle('Contractor Holiday Requests')/items(@{outputs('Compose')})/breakroleinheritance(copyRoleAssignments=false,clearSubscopes=true)
+_api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/roleassignments/addroleassignment
