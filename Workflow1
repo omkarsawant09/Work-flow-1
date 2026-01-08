@@ -1,3 +1,11 @@
+_api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/roleassignments/removebyprincipalid(@{items('Apply_to_each')?['PrincipalId']})
+
+
+
+
+
+
+
 _api/web/lists/getbytitle('Contractor Holiday Requests')/items(@{triggerBody()?['ID']})/roleassignments/removeroleassignment(principalid=@{items('Apply_to_each')?['Member']?['Id']},roledefid=1073741826)
 
 
